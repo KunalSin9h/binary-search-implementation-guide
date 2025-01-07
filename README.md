@@ -1,3 +1,3 @@
-=== Binary Search: An Implementation Guide Paper Source. 
+### Binary Search: An Implementation Guide Paper Source. 
 
 
