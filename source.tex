@@ -20,7 +20,7 @@
 	
 	\title{\emph{Binary Search}: An Implementation Guide}
 	
-	\author{Kunal Singh \orcidlink{0009-0008-6906-2062}  \\
+	\author{Kunal K. Singh \orcidlink{0009-0008-6906-2062}  \\
 		\\
 		Technical Report \\
 		Bhopal, MP, India \\
@@ -34,7 +34,7 @@
 	\thispagestyle{empty}
 	
 	\begin{abstract}
-		Binary Search is on the most popular \emph{searching} algorithms. It is used in variety of applications, but implementing it requires careful consideration of various components like \emph{lower} and \emph{upper} bounds,\emph{mid} value, conditions and answers. We present a general method of \textbf{implementing} binary search. This process always give the correct result and it is very easy to work with. We have focused more on implementation then explaining different binary search concepts. 
+		Binary Search is on the most popular \emph{searching} algorithms. It is used in variety of applications, but implementing it requires careful consideration of various components like \emph{lower} and \emph{upper} bounds, \emph{mid} value, conditions and answers. I present a general method of \textbf{implementing} binary search. This process always give the correct result and it is very easy to work with. We have focused more on implementation then explaining different binary search concepts. 
 	\end{abstract}
 	
 	
@@ -50,7 +50,7 @@
 		These boundaries are dynamically adjusted as the search progresses, with the lower bound typically starting at the first index and the upper bound at the last index of the array.
 		
 		
-		The algorithm's effectiveness relies on the \textbf{predicate function}, which evaluates positions within the search space and returns a boolean value to determine the target's location relative to the current position. This function must maintain monotonically to establish a clear true/false boundary across the search space.
+		The algorithm's effectiveness relies on the \textbf{predicate function}, which evaluates positions within the search space and returns a boolean value to determine the target's location relative to the current position. This function must maintain monotonically to establish a clear \texttt{true/false} boundary across the search space.
 		
 	 	Binary search achieves logarithmic time complexity \texttt{O(log n)} by eliminating half of the remaining search space in each iteration, making it particularly valuable in applications such as database index lookups, sorted array searching, and optimization problems where the search space can be represented as a sorted sequence.
 	 	
@@ -82,8 +82,8 @@
 		\item[$\bullet$]  What is the value of \texttt{lower bound}?
 		\item[$\bullet$]  What is the value of \texttt{upper bound}?
 		\item[$\bullet$]  How do I calculate my \texttt{mid} value?
-		\item[$\bullet$]  What condition should i write in my \texttt{while loop}?
-		\item[$\bullet$]  When my predicate is true, should i assign my \texttt{mid} to \texttt{lower} or \texttt{upper} bound?
+		\item[$\bullet$]  What condition should I write in my \texttt{while loop}?
+		\item[$\bullet$]  When my predicate is true, should I assign my \texttt{mid} to \texttt{lower} or \texttt{upper} bound?
 		\item[$\bullet$]  Whats my final answer, value of \texttt{lower} or \texttt{upper} bound?
 	\end{description}
 	
@@ -119,7 +119,7 @@
 	
 	\includegraphics[width=0.5\textwidth]{firsttrue.png}
 	
-	We present a generalized algorithm implementation method \emph{first true binary search}, with changes from the classic implementation as:
+	I present a generalized algorithm implementation method \emph{first true binary search}, with changes from the classic implementation as:
 	
 	\vspace{5pt}
 	
@@ -216,7 +216,7 @@ P(array, key, mid) =
 	
 	\includegraphics[width=0.5\textwidth]{lasttrue.png}
 	
-	The generalized algorithm implementation method \emph{first true binary search}, with changes from the classic implementation as:
+	The generalized algorithm implementation method \emph{last true binary search}, with changes from the classic implementation as:
 	
 	\vspace{5pt}
 	
@@ -287,7 +287,7 @@ P(array, key, mid) =
 	
 	\section{The Conclusions}
 	
-	In conclusion, we can say following these methods for implementing will grantees us the correctness of algorithms. We no longer need to worry about the different components involved in binary search algorithm, and can solely focus on refining the \textbf{predicate} function. You can create a template for reusing it multiple times. 
+	In conclusion, we can say following these methods for implementing will grantees us the correctness of algorithms. We no longer need to worry about the different components involved in binary search algorithm, and can solely focus on refining the \textbf{predicate} function. You can create a template for reusing it multiple times.
 	
 	\section{Future Work}
 	
@@ -295,6 +295,6 @@ P(array, key, mid) =
 	
 	\section{Acknowledgment}
 	
-	This work is inspired from the code submitted by Benq (a top rated competitive programmer) on Codeforces. He has created templates for these methods. \href{https://codeforces.com/submissions/Benq}{Here is the link to solutions}.
+	This work is inspired from the code submitted by Benq (a top rated competitive programmer) on Codeforces. \href{https://codeforces.com/submissions/Benq}{Here is the link to submitted solutions}.
 	
 \end{document}
